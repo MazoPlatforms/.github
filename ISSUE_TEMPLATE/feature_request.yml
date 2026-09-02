@@ -1,0 +1,60 @@
+name: Feature Request
+description: Suggest an idea or new capability for this project
+title: "[FEAT]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us improve! Please describe the feature or enhancement you would like to see added to Mazo Platforms.
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: Is your feature request related to a problem?
+      description: A clear and concise description of what the problem or limitation is.
+      placeholder: "e.g., I'm frustrated when..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution or capability you would like to see implemented.
+      placeholder: Describe how it should work or what APIs/components should be added...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives-considered
+    attributes:
+      label: Alternatives Considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
+      placeholder: "e.g., Workarounds currently being used..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: target-area
+    attributes:
+      label: Target Component / Area
+      description: Which area of the codebase does this request target?
+      options:
+        - "Frontend / Web Application UI"
+        - "Backend / REST & GraphQL APIs"
+        - "Mobile App / Android (Kotlin/Compose)"
+        - "Developer Tools & NPM Packages"
+        - "CI/CD & Infrastructure"
+        - "Other"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, wireframes, code snippets, or screenshots about the feature request here.
+    validations:
+      required: false
+      

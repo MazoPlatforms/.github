@@ -64,7 +64,7 @@ Before submitting your PR, make sure to verify:
  * Existing test suites pass successfully.
  * You have added new unit or integration tests covering your changes where relevant.
 # Example check command
-npm run lint && npm run test
+```npm run lint && npm run test```
 
 🚀 Pull Request Checklist
 When creating a PR, ensure your submission fulfills the following:

@@ -1,0 +1,66 @@
+name: Bug Report
+description: Create a report to help us reproduce and fix an issue
+title: "[BUG]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an issue! Please fill out the form below to help us investigate and fix it faster.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe the problem you encountered...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Explain step-by-step how to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: A clear description of what you expected to happen.
+      placeholder: Explain what should have happened...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Logs
+      description: Add any screenshots, visual aids, or console/terminal logs to help explain your problem.
+      placeholder: Paste error logs or drag-and-drop images here...
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment & Versions
+      description: Specify the versions of Node.js/Kotlin, OS, browser, package version, or devices used.
+      placeholder: "e.g., Node.js v20.x, Next.js v14, Chrome 120, Android 14"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context or notes about the problem here.
+    validations:
+      required: false
